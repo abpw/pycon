@@ -24,18 +24,18 @@ Customizations can also be defined on a per-project basis by defining a console_
 ##### decorator for registering commands to be available in the console's namespace
 * command is the base command to be entered into the console by the user, like 'cd' or 'pp'
 * invocation is how the interpreter invokes the function 
- * the default, for example, is '<func>({:s})', where <func> is the name of the python function being invoked, and {:s} will be replaced by the arguments to the command
+  * the default, for example, is '<func>({:s})', where <func> is the name of the python function being invoked, and {:s} will be replaced by the arguments to the command
 * the other arguments deal with how the command will be described by the help command:
- * description is a description of the command
- * detail_dict can contain hierarchical information about the command, like a description of arguments
- * help is whether to include a help entry for the command
+  * description is a description of the command
+  * detail_dict can contain hierarchical information about the command, like a description of arguments
+  * help is whether to include a help entry for the command
 
 #### @register_function(description='', detail_dict={}, help=True)
 ##### decorator for registering functions to be available in the console's namespace
 * the arguments deal with how the command will be described by the help command:
- * description is a description of the function
- * detail_dict can contain hierarchical information about the function, like a description of arguments
- * help is whether to include a help entry for the function
+  * description is a description of the function
+  * detail_dict can contain hierarchical information about the function, like a description of arguments
+  * help is whether to include a help entry for the function
 
 #### register_variables(\*\*vars)
 ##### function for registering variables
