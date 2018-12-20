@@ -1,7 +1,9 @@
 # pycon
 ## a customizable interactive python 2 console with some bash functionality
 
-To install, execute "./install_pycon.sh"
+To pagkage from source, execute "./package.sh"
+
+To install, after packaging, execute "./install_pycon.sh"
 
 For other information, execute "pycon -h" after installation.
 
