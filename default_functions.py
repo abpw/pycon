@@ -72,7 +72,7 @@ def print_members(object):
 
 @register_command('methods', description="Print the bound methods of the argument object.")
 def print_methods(object):
-    pprint([memb for memb in inspect.getmembers(object) if 'bound method' in memb[1])
+    pprint([memb for memb in inspect.getmembers(object) if 'bound method' in memb[1]])
 
 detail_dict = ['Usage: "help[ <query 1>[ <query 2>[ <query 3>...]]]"',
                {'Parameters:':
